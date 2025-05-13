@@ -1,0 +1,56 @@
+body {
+  background-image: url("./pictures/w.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.32);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li a {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff0048;
+}
+
+nav img {
+  height: 2.3rem;
+  transition: 0.3s;
+}
+
+nav img:hover {
+  transform: scale(1.1);
+}
+
+nav h1 {
+  font-family: "Coral Pixels", serif;
+  font-size: 2rem;
+}

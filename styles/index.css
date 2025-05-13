@@ -1,0 +1,46 @@
+.hero {
+  margin: 50px;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero .presentation h1{
+  font-size: 70px;
+}
+
+.hero img {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+}
+
+.btnstyle {
+  margin: 1rem;
+  color: black;
+  background-color: rgb(255, 166, 0);
+  width: 15rem;
+  height: 5rem;
+  border: 0;
+  font-size: 1.8rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.contact:hover {
+  background-color: rgb(180, 0, 0);
+  color: white;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+#name {
+  color: #0c006b;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Source Code Pro", monospace;
+}

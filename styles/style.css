@@ -1,3 +1,10 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   background-image: url("./pictures/w.webp");
   background-size: cover;
@@ -6,16 +13,23 @@ body {
   height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1;
 }
 
 nav {
   display: flex;
   background-color: rgba(0, 0, 0, 0.32);
   height: 4rem;
-  display: flex;
   align-items: center;
   padding: 0 2rem;
   justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav ul {
@@ -24,9 +38,10 @@ nav ul {
   gap: 2rem;
   margin: 0;
   padding: 0;
-  width: 100%;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
 }
 
 nav ul li a {
@@ -35,6 +50,7 @@ nav ul li a {
   text-decoration: none;
   color: white;
   transition: color 0.3s;
+  white-space: nowrap;
 }
 
 nav ul li a:hover {
@@ -53,4 +69,66 @@ nav img:hover {
 nav h1 {
   font-family: "Coral Pixels", serif;
   font-size: 2rem;
+  color: white;
+}
+
+.footer {
+  background: linear-gradient(135deg, #1f1f1f, #2d2d2d);
+  color: #ccc;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 50px;
+  position: relative;
+  font-family: 'Source Code Pro', monospace;
+  border-top: 2px solid #444;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  nav h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  nav img {
+    height: 2rem;
+  }
+}
+
+
+@media (max-width: 570px) {
+  nav {
+    gap: 2rem;
+  }
+
+  nav ul li:not(:first-child) {
+    display: none;
+  }
+
+  nav h1 {
+    font-size: 1.3rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  nav img {
+    height: 1.8rem;
+  }
 }

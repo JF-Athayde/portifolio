@@ -14,7 +14,6 @@
   gap: 30px;
   padding: 20px;
   border-radius: 20px;
-  background: linear-gradient(135deg, #1f1f1f, #2d2d2d);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
@@ -29,7 +28,7 @@
 
 .project:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.5);
 }
 
 .project h3 {
@@ -56,4 +55,61 @@
 
 .project a:hover {
   color: #1de9b6;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+  }
+
+  .projects-list {
+    width: 95%;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .project {
+    padding: 20px;
+  }
+
+  .project h3 {
+    font-size: 2rem;
+  }
+
+  .project p {
+    font-size: 1.1rem;
+  }
+
+  .project a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .projects-list {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .project {
+    padding: 15px;
+  }
+
+  .project h3 {
+    font-size: 1.7rem;
+  }
+
+  .project p {
+    font-size: 1rem;
+  }
+
+  .project a {
+    font-size: 0.95rem;
+  }
 }

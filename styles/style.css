@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 html, body {
   height: 100%;
   margin: 0;
@@ -45,7 +47,7 @@ nav ul {
 }
 
 nav ul li a {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 1.6rem;
   text-decoration: none;
   color: white;
@@ -115,7 +117,7 @@ nav h1 {
 
 @media (max-width: 570px) {
   nav {
-    gap: 2rem;
+    gap: 4px;
   }
 
   nav ul li:not(:first-child) {

@@ -1,0 +1,149 @@
+.hero h1 {
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.projects-list {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project {
+  background: linear-gradient(145deg, #2c2c2c, #3b3b3b);
+  color: #fff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.5);
+}
+
+.project h3 {
+  font-size: 2.5rem;
+  color: #a5008c;
+  margin-bottom: 10px;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.project p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  color: #ddd;
+}
+
+.project a {
+  text-decoration: none;
+  color: #00bcd4;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.project a:hover {
+  color: #1de9b6;
+}
+
+.btnstyle {
+  margin: 1rem;
+  color: black;
+  background-color: rgb(255, 166, 0);
+  width: 15rem;
+  height: 5rem;
+  border: 0;
+  font-size: 1.8rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.btnstyle:hover {
+  transform: scale(1.05);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .btnstyle {
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    padding: 1.5rem;
+  }
+
+  .projects-list {
+    width: 95%;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .project {
+    padding: 20px;
+  }
+
+  .project h3 {
+    font-size: 2rem;
+  }
+
+  .project p {
+    font-size: 1.1rem;
+  }
+
+  .project a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btnstyle {
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .projects-list {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .project {
+    padding: 15px;
+  }
+
+  .project h3 {
+    font-size: 1.7rem;
+  }
+
+  .project p {
+    font-size: 1rem;
+  }
+
+  .project a {
+    font-size: 0.95rem;
+  }
+}

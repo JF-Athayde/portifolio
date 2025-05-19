@@ -50,7 +50,7 @@ nav ul li a {
   font-family: "Roboto Mono", monospace;
   font-size: 1.6rem;
   text-decoration: none;
-  color: white;
+  color: #dbd6ff;
   transition: color 0.3s;
   white-space: nowrap;
 }
